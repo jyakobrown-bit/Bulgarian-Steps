@@ -554,3 +554,34 @@ window.BG_CAST = {
   russell: 'Ръсел', james: 'Джеймс', stanimira: 'Станимира', waiter: 'Сервитьор',
   woman: 'Жена', cashier: 'Касиерка', seller: 'Продавачка', petar: 'Петър'
 };
+
+/*
+  Picture dictionary rooms. items: [object id, 'Bulgarian', 'English']
+  The object ids match the drawings, so keep them; the words can change.
+*/
+window.BG_ROOMS = [
+  {
+    id: 'kitchen', title: 'Kitchen', bg: 'Кухня',
+    items: [
+      ['table', 'м`аса', 'table'], ['chair', 'стол', 'chair'], ['cup', 'ч`аша', 'cup'], ['plate', 'чин`ия', 'plate'],
+      ['knife', 'нож', 'knife'], ['fork', 'в`илица', 'fork'], ['spoon', 'лъж`ица', 'spoon'], ['fridge', 'хлад`илник', 'fridge'],
+      ['cooker', 'п`ечка', 'cooker'], ['pot', 'т`енджера', 'pot'], ['window', 'проз`орец', 'window'], ['clock', 'час`овник', 'clock']
+    ]
+  },
+  {
+    id: 'workshop', title: 'Workshop', bg: 'Работилница',
+    items: [
+      ['hammer', 'чук', 'hammer'], ['spanner', 'г`аечен ключ', 'spanner'], ['screwdriver', 'отв`ертка', 'screwdriver'], ['saw', 'три`он', 'saw'],
+      ['nails', 'пир`они', 'nails'], ['gloves', 'ръкав`ици', 'gloves'], ['helmet', 'к`аска', 'helmet'], ['bench', 'тезг`ях', 'workbench'],
+      ['ladder', 'ст`ълба', 'ladder'], ['bucket', 'к`офа', 'bucket'], ['lamp', 'л`ампа', 'lamp'], ['box', 'кут`ия', 'box']
+    ]
+  },
+  {
+    id: 'garden', title: 'Garden', bg: 'Градина',
+    items: [
+      ['tree', 'дърв`о', 'tree'], ['flower', 'цв`ете', 'flower'], ['grass', 'трев`а', 'grass'], ['bird', 'пт`ица', 'bird'],
+      ['sun', 'сл`ънце', 'sun'], ['cloud', '`облак', 'cloud'], ['gate', 'п`орта', 'gate'], ['bench', 'п`ейка', 'bench'],
+      ['hose', 'марк`уч', 'hose'], ['shovel', 'лоп`ата', 'shovel']
+    ]
+  }
+];
