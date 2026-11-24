@@ -1,5 +1,5 @@
 /* Offline support. Bump VERSION whenever you change the app's files. */
-const VERSION = 'steps-v8';
+const VERSION = 'steps-v9';
 const SHELL = ['./', 'index.html', 'style.css', 'words.js', 'app.js', 'manifest.webmanifest',
   'icons/icon-192.png', 'icons/icon-512.png', 'icons/maskable-512.png'];
 
@@ -16,7 +16,8 @@ self.addEventListener('fetch', (e) => {
   if (url.pathname.endsWith('voice-pack.json')) return; // always fresh from the website
   if (url.origin === location.origin) {
     // Online: get the newest version. Offline: use the saved copy.
-    e.respondWith(fetch(req).then((res) => {
+    // no-cache: always ask the website for the newest copy (cheap when nothing changed)
+    e.respondWith(fetch(req, { cache: 'no-cache' }).then((res) => {
       const copy = res.clone();
       if (res.ok) caches.open(VERSION).then((c) => c.put(req, copy));
       return res;
