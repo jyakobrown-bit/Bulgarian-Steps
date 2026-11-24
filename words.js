@@ -60,20 +60,24 @@ window.BG_UNITS = [
       ['е', 'is', ''],
       ['к`азвам се', 'my name is', '🏷️'],
       ['при`ятел', 'friend', '🤝'],
+      ['зав`арчик', 'welder', '👨‍🏭'],
       ['уч`ител', 'teacher', '🧑‍🏫'],
       ['от', 'from', ''],
       ['Бълг`ария', 'Bulgaria', '🇧🇬'],
       ['`Англия', 'England', '💂']
     ],
     extra: [
+      ['Р`ъсел', 'Russell'],
       ['мой', 'my'],
       ['д`обър', 'good']
     ],
     sentences: [
-      ['Казвам се Иван.', 'My name is Ivan.', ["I'm called Ivan."]],
+      ['Казвам се Ръсел.', 'My name is Russell.', ["I'm called Russell."]],
+      ['Аз съм Ръсел.', 'I am Russell.', ["I'm Russell."]],
       ['Аз съм от Англия.', 'I am from England.', ["I'm from England."]],
       ['Тя е от България.', 'She is from Bulgaria.', ["She's from Bulgaria."]],
-      ['Аз съм учител.', 'I am a teacher.', ["I'm a teacher."]],
+      ['Аз съм заварчик.', 'I am a welder.', ["I'm a welder."]],
+      ['Тя е учител.', 'She is a teacher.', ["She's a teacher."]],
       ['Той е мой приятел.', 'He is my friend.', ["He's my friend."]],
       ['Ти си добър приятел.', 'You are a good friend.', ["You're a good friend."]]
     ]
@@ -319,5 +323,85 @@ window.BG_UNITS = [
       ['Гладен съм.', 'I am hungry.', ["I'm hungry."]],
       ['Обичам България!', 'I love Bulgaria!']
     ]
+  },
+  {
+    id: 'mylife', title: 'My life', bg: 'Моят живот', color: '#5a3e8c', motif: 'tree',
+    tips: [
+      'се казва = is called. Синът ми се казва Джеймс = My son is called James.',
+      'си after a word means "my own": семейството си = my (own) family.'
+    ],
+    words: [
+      ['сем`ейство', 'family', '👨‍👩‍👦'],
+      ['съпр`уга', 'wife', '💍'],
+      ['съпр`уг', 'husband', '🤵'],
+      ['дом', 'home', '🏡'],
+      ['жив`ея', 'I live', '📍'],
+      ['раб`отя', 'I work', '🛠️'],
+      ['уч`а', 'I learn, I study', '📚'],
+      ['говор`и', 'he / she speaks', '🗣️'],
+      ['горд', 'proud', '🥹'],
+      ['щастл`ив', 'happy', '😄']
+    ],
+    extra: [
+      ['Джеймс', 'James'],
+      ['се к`азва', 'is called'],
+      ['к`ато', 'as, like'],
+      ['си', 'my own (goes after the word)'],
+      ['сем`ейството', 'the family'],
+      ['горд`ея се', 'I am proud'],
+      ['със', 'with, of (before с- words)'],
+      ['с`ина', 'the son (after със)']
+    ],
+    sentences: [
+      ['Синът ми се казва Джеймс.', 'My son is called James.', ["My son's name is James."]],
+      ['Джеймс говори български.', 'James speaks Bulgarian.'],
+      ['Работя като заварчик.', 'I work as a welder.'],
+      ['Живея в Англия.', 'I live in England.'],
+      ['Уча български.', 'I am learning Bulgarian.', ["I'm learning Bulgarian.", 'I learn Bulgarian.']],
+      ['Обичам семейството си.', 'I love my family.'],
+      ['Гордея се със сина си.', 'I am proud of my son.', ["I'm proud of my son."]]
+    ]
+  },
+  {
+    id: 'work', title: 'At work', bg: 'На работа', color: '#4a5563', motif: 'spark',
+    tips: [
+      'Трябва ми … = I need … Add any tool: Трябва ми чук.',
+      'Внимавай! (Careful!) is worth knowing on any job.'
+    ],
+    words: [
+      ['мет`ал', 'metal', '🔩'],
+      ['стом`ана', 'steel', '🏗️'],
+      ['жел`язо', 'iron', '⛓️'],
+      ['зав`арка', 'weld, welding', '⚡'],
+      ['к`аска', 'helmet', '🪖'],
+      ['ръкав`ици', 'gloves', '🧤'],
+      ['чук', 'hammer', '🔨'],
+      ['`огън', 'fire', '🔥'],
+      ['гор`ещо', 'hot', '🌡️'],
+      ['оп`асно', 'dangerous', '⚠️'],
+      ['поч`ивка', 'break, rest', '☕'],
+      ['раб`ота', 'work, job', '💼']
+    ],
+    extra: [
+      ['тр`ябва ми', 'I need'],
+      ['д`айте ми', 'give me (polite)'],
+      ['ч`ука', 'the hammer'],
+      ['вним`авай', 'careful!'],
+      ['вр`еме', 'time'],
+      ['за', 'for'],
+      ['раб`отата', 'the work, the job']
+    ],
+    sentences: [
+      ['Внимавай, горещо е!', 'Careful, it is hot!', ["Careful, it's hot!"]],
+      ['Трябва ми каска.', 'I need a helmet.'],
+      ['Дайте ми чука, моля.', 'Give me the hammer, please.', ['Please give me the hammer.']],
+      ['Това е стомана.', 'This is steel.'],
+      ['Много е опасно.', 'It is very dangerous.', ["It's very dangerous."]],
+      ['Време е за почивка!', 'It is time for a break!', ["It's time for a break!"]],
+      ['Обичам работата си.', 'I love my job.', ['I love my work.', 'I like my job.']]
+    ]
   }
 ];
+
+/* Who the voice messages are from (shown as "A message from …") */
+window.BG_SETTINGS = { messagesFrom: 'James' };

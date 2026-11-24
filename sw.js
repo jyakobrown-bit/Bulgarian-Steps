@@ -1,5 +1,5 @@
 /* Offline support. Bump VERSION whenever you change the app's files. */
-const VERSION = 'steps-v1';
+const VERSION = 'steps-v3';
 const SHELL = ['./', 'index.html', 'style.css', 'words.js', 'app.js', 'manifest.webmanifest',
   'icons/icon-192.png', 'icons/icon-512.png', 'icons/maskable-512.png'];
 
